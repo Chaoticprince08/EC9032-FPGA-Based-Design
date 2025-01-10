@@ -1,5 +1,5 @@
-module moduleName (
-    ports
+module controller (
+    input clk,rst,
 );
     
 endmodule
