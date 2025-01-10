@@ -1,4 +1,5 @@
-module datapath (
+`timescale 1ns/1ps;
+module adder_datapath (
     input clk,
     input rst,
     input aload, bload, cload, dload,
