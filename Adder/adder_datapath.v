@@ -5,5 +5,13 @@ module datapath (
     output reg [15:0] sum
 );
 
+always @(posedge clk or posedge rst) begin
+    if(rst) begin
+        sum <= 16'b0;
+    end
+    else begin
+        
+    end
+end
     
 endmodule
