@@ -1,4 +1,12 @@
-`timescale 1ns/1ps;
+/*
+Author : Vecha Sathwik
+Version : 1.0
+Date : 10/01/2025
+Status : Working
+Commit : Dev
+*/
+
+`timescale 1ns/1ps
 module adder_datapath (
     input clk,
     input rst,
