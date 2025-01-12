@@ -50,6 +50,7 @@ always @(go or present_state) begin
                 bload = 1'b1;
                 cload = 1'b1;
                 dload = 1'b1;
+                next_state = S3;
             end
             S3 : begin
                 aload = 1'b0;
@@ -58,18 +59,21 @@ always @(go or present_state) begin
                 dload = 1'b0;
                 asel = 1'b1;
                 bsel = 2'b00;
+                next_state = S4;
             end
             S4 : begin
                 asel = 1'b0;
                 bsel = 2'b01;
+                next_state = S5;
             end
             S5 : begin
                 asel = 1'b0;
                 bsel = 2'b10;
+                next_state = S6;
             end
             S6 : begin
-                next_state = S0;
                 output_enable = 1'b1;
+                next_state = S0;
             end
             default: begin
                 next_state = S0;
