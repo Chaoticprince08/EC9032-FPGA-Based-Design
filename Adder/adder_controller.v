@@ -7,7 +7,7 @@ Commit : Dev
 */
 
 `timescale 1ns / 1ps
-module controller (
+module adder_controller (
     input clk,rst,go,
     output reg aload,bload,cload,dload,
     output reg asel,
