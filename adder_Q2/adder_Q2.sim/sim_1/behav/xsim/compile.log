@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mtech/EC9032-FPGA Based Design/Adder/adder_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mtech/EC9032-FPGA Based Design/Adder/adder_datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mtech/EC9032-FPGA Based Design/Adder/adder_topmodule.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_controller
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'adder_controller' [D:/mtech/EC9032-FPGA Based Design/Adder/adder_controller.v:10]
+INFO: [VRFC 10-311] analyzing module adder_datapath
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'adder_datapath' [D:/mtech/EC9032-FPGA Based Design/Adder/adder_datapath.v:10]
+INFO: [VRFC 10-311] analyzing module adder_topmodule
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mtech/EC9032-FPGA Based Design/Adder/adder_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_controller
+INFO: [VRFC 10-311] analyzing module adder_datapath
+INFO: [VRFC 10-311] analyzing module adder_topmodule
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'adder_topmodule' [D:/mtech/EC9032-FPGA Based Design/Adder/adder_topmodule.v:12]
+INFO: [VRFC 10-311] analyzing module adder_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mtech/EC9032-FPGA Based Design/adder_Q2/adder_Q2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
