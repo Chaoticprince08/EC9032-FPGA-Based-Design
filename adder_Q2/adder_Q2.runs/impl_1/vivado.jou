@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Jan 12 20:29:50 2025
+# Process ID: 18592
+# Current directory: D:/mtech/EC9032-FPGA Based Design/adder_Q2/adder_Q2.runs/impl_1
+# Command line: vivado.exe -log adder_topmodule.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source adder_topmodule.tcl -notrace
+# Log file: D:/mtech/EC9032-FPGA Based Design/adder_Q2/adder_Q2.runs/impl_1/adder_topmodule.vdi
+# Journal file: D:/mtech/EC9032-FPGA Based Design/adder_Q2/adder_Q2.runs/impl_1\vivado.jou
+# Running On: Nani, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 8496 MB
+#-----------------------------------------------------------
+source adder_topmodule.tcl -notrace
