@@ -1,0 +1,131 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001d70d946ba0 .scope module, "mac_datapath" "mac_datapath" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "rst";
+    .port_info 2 /INPUT 4 "A";
+    .port_info 3 /INPUT 4 "B";
+    .port_info 4 /INPUT 1 "load_a";
+    .port_info 5 /INPUT 1 "load_b";
+    .port_info 6 /INPUT 1 "load_m";
+    .port_info 7 /INPUT 1 "load_acc";
+    .port_info 8 /INPUT 1 "load_out";
+    .port_info 9 /OUTPUT 12 "out";
+    .port_info 10 /OUTPUT 1 "done";
+o000001d70d81af78 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v000001d70d947110_0 .net "A", 3 0, o000001d70d81af78;  0 drivers
+o000001d70d81afa8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v000001d70d947330_0 .net "B", 3 0, o000001d70d81afa8;  0 drivers
+v000001d70d946df0_0 .var "Racc", 11 0;
+o000001d70d81b008 .functor BUFZ 1, C4<z>; HiZ drive
+v000001d70d946e90_0 .net "clk", 0 0, o000001d70d81b008;  0 drivers
+v000001d70d94bc10_0 .var "done", 0 0;
+o000001d70d81b068 .functor BUFZ 1, C4<z>; HiZ drive
+v000001d70d94bcb0_0 .net "load_a", 0 0, o000001d70d81b068;  0 drivers
+o000001d70d81b098 .functor BUFZ 1, C4<z>; HiZ drive
+v000001d70d94bd50_0 .net "load_acc", 0 0, o000001d70d81b098;  0 drivers
+o000001d70d81b0c8 .functor BUFZ 1, C4<z>; HiZ drive
+v000001d70d94bdf0_0 .net "load_b", 0 0, o000001d70d81b0c8;  0 drivers
+o000001d70d81b0f8 .functor BUFZ 1, C4<z>; HiZ drive
+v000001d70d812ae0_0 .net "load_m", 0 0, o000001d70d81b0f8;  0 drivers
+o000001d70d81b128 .functor BUFZ 1, C4<z>; HiZ drive
+v000001d70d812b80_0 .net "load_out", 0 0, o000001d70d81b128;  0 drivers
+v000001d70d812e00_0 .var "out", 11 0;
+v000001d70d812cc0_0 .var "reset_flag", 0 0;
+o000001d70d81b1b8 .functor BUFZ 1, C4<z>; HiZ drive
+v000001d70d813580_0 .net "rst", 0 0, o000001d70d81b1b8;  0 drivers
+v000001d70d8129a0_0 .var "temp_min", 0 0;
+E_000001d70d819440/0 .event anyedge, v000001d70d812cc0_0, v000001d70d94bd50_0, v000001d70d812ae0_0, v000001d70d94bdf0_0;
+E_000001d70d819440/1 .event anyedge, v000001d70d94bcb0_0, v000001d70d947330_0, v000001d70d947110_0;
+E_000001d70d819440 .event/or E_000001d70d819440/0, E_000001d70d819440/1;
+E_000001d70d818a40 .event posedge, v000001d70d946e90_0, v000001d70d813580_0;
+    .scope S_000001d70d946ba0;
+T_0 ;
+    %wait E_000001d70d818a40;
+    %load/vec4 v000001d70d813580_0;
+    %cmpi/e 1, 0, 1;
+    %jmp/0xz  T_0.0, 4;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v000001d70d812cc0_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000001d70d812cc0_0, 0;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_000001d70d946ba0;
+T_1 ;
+    %wait E_000001d70d819440;
+    %load/vec4 v000001d70d812cc0_0;
+    %cmpi/e 1, 0, 1;
+    %jmp/0xz  T_1.0, 4;
+    %pushi/vec4 0, 0, 12;
+    %assign/vec4 v000001d70d946df0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000001d70d94bc10_0, 0;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/vec4 v000001d70d94bcb0_0;
+    %pushi/vec4 1, 0, 1;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %load/vec4 v000001d70d94bdf0_0;
+    %pushi/vec4 1, 0, 1;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %and;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.2, 8;
+    %load/vec4 v000001d70d947110_0;
+    %load/vec4 v000001d70d947330_0;
+    %mul;
+    %pad/u 1;
+    %store/vec4 v000001d70d8129a0_0, 0, 1;
+    %jmp T_1.3;
+T_1.2 ;
+    %load/vec4 v000001d70d812ae0_0;
+    %cmpi/e 1, 0, 1;
+    %jmp/0xz  T_1.4, 4;
+    %load/vec4 v000001d70d8129a0_0;
+    %pad/u 12;
+    %assign/vec4 v000001d70d946df0_0, 0;
+    %jmp T_1.5;
+T_1.4 ;
+    %load/vec4 v000001d70d94bd50_0;
+    %cmpi/e 1, 0, 1;
+    %jmp/0xz  T_1.6, 4;
+    %load/vec4 v000001d70d946df0_0;
+    %load/vec4 v000001d70d8129a0_0;
+    %pad/u 12;
+    %add;
+    %assign/vec4 v000001d70d946df0_0, 0;
+    %jmp T_1.7;
+T_1.6 ;
+    %load/vec4 v000001d70d812b80_0;
+    %cmpi/e 1, 0, 1;
+    %jmp/0xz  T_1.8, 4;
+    %load/vec4 v000001d70d946df0_0;
+    %assign/vec4 v000001d70d812e00_0, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v000001d70d94bc10_0, 0;
+T_1.8 ;
+T_1.7 ;
+T_1.5 ;
+T_1.3 ;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1, $push;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "mac_datapath_tb.v";
