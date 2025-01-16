@@ -25,7 +25,8 @@ module mac_datapath (
 //Internal Signals
 reg [11:0] Racc;
 reg reset_flag;
-reg temp_min;
+reg [7:0] temp_min;
+reg [7:0] temp_mout;
 reg [3:0] count_out;
 
 //For reset Logic
@@ -51,10 +52,10 @@ always @(A or B or load_a or load_b or load_m or load_acc or reset_flag) begin
             temp_min = A*B;            
         end
         else if(load_m == 1'b1) begin
-            Racc = temp_min;
+            temp_mout = temp_min;
         end
         else if(load_acc == 1'b1) begin
-            Racc = Racc + temp_min;
+            Racc = Racc + temp_mout;
         end
         else if(load_out == 1'b1) begin
             out = Racc;
@@ -68,7 +69,8 @@ always @(A or B or load_a or load_b or load_m or load_acc or reset_flag) begin
 end
 
 //Logic for counter
-always @(posedge(clk)) begin
+//The below logic may not be triggered for clock instead we can provide count_enable in process sensitivity list
+always @(posedge(count_enable)) begin
     if(count_enable == 1'b1 & count_out <= 4'b1010) begin
         count_out <= count_out + 4'b0001;
         cmp <= 1'b0;
