@@ -3,6 +3,7 @@ Developed by : Vecha Sathwik
 Date : 17/01/2025
 Version : Alpha
 Rev : 1.0
+Status : Working
 */
 `include "mac_controlpath.v"
 `include "mac_datapath.v"
@@ -26,7 +27,10 @@ wire load_out;
 wire cmp;
 wire count_enable;
 
+//Instantiate the datapath and controlpath
 mac_datapath datapath_inst1(
+    .rst(rst),
+    .clk(clk),
     .A(A),
     .B(B),
     .load_a(load_a),

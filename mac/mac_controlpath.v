@@ -3,8 +3,8 @@ Developed by : Vecha Sathwik
 Date : 17/01/2025
 Version : Alpha
 Rev : 1.0
+Status : Working
 */
-
 `timescale 1ns / 1ps
 module mac_controlpath (
     input clk,
@@ -53,16 +53,21 @@ always @(go or present_state) begin
             S1 : begin
                 load_a = 1'b1;
                 load_b = 1'b1;
+                load_m = 1'b0;
+                load_acc = 1'b0;
+                load_out = 1'b0;
                 count_enable = 1'b1;
                 next_state = S2;
             end
 
             S2 : begin
-                count_enable = 1'b0;
                 next_state = S3;
             end
 
             S3 : begin
+                load_a = 1'b0;
+                load_b = 1'b0;
+                count_enable = 1'b0;
                 load_m = 1'b1;
                 next_state = S4;
             end
@@ -73,6 +78,7 @@ always @(go or present_state) begin
 
             S5 : begin
                 load_acc = 1'b1;
+                load_m = 1'b0;
                 next_state = S6;
             end
 
