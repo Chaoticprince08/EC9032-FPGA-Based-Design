@@ -1,0 +1,325 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Jan 17 09:36:49 2025
+# Process ID: 23212
+# Current directory: D:/mtech/EC9032-FPGA Based Design/mac/mac.runs/synth_1
+# Command line: vivado.exe -log mac_testbench.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mac_testbench.tcl
+# Log file: D:/mtech/EC9032-FPGA Based Design/mac/mac.runs/synth_1/mac_testbench.vds
+# Journal file: D:/mtech/EC9032-FPGA Based Design/mac/mac.runs/synth_1\vivado.jou
+# Running On: Nani, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 8496 MB
+#-----------------------------------------------------------
+source mac_testbench.tcl -notrace
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 448.902 ; gain = 162.855
+Command: read_checkpoint -auto_incremental -incremental {D:/mtech/EC9032-FPGA Based Design/mac/mac.srcs/utils_1/imports/synth_1/mac_testbench.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/mtech/EC9032-FPGA Based Design/mac/mac.srcs/utils_1/imports/synth_1/mac_testbench.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top mac_testbench -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20364
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'mac_controlpath' [D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v:98]
+INFO: [Synth 8-9937] previous definition of design element 'mac_controlpath' is here [D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v:98]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'mac_datapath' [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:84]
+INFO: [Synth 8-9937] previous definition of design element 'mac_datapath' is here [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:84]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'mac_controlpath' [D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v:98]
+INFO: [Synth 8-9937] previous definition of design element 'mac_controlpath' is here [D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v:98]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'mac_datapath' [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:84]
+INFO: [Synth 8-9937] previous definition of design element 'mac_datapath' is here [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:84]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'mac_topmodule' [D:/mtech/EC9032-FPGA Based Design/mac/mac_topmodule.v:60]
+INFO: [Synth 8-9937] previous definition of design element 'mac_topmodule' is here [D:/mtech/EC9032-FPGA Based Design/mac/mac_topmodule.v:60]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 891.402 ; gain = 410.867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mac_testbench' [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:10]
+WARNING: [Synth 8-6896] loop limit (65536) exceeded inside initial block, initial block items will be ignored [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:38]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:54]
+WARNING: [Synth 8-639] system function call 'random' not supported [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:55]
+INFO: [Synth 8-6157] synthesizing module 'mac_topmodule' [D:/mtech/EC9032-FPGA Based Design/mac/mac_topmodule.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mac_datapath' [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:10]
+WARNING: [Synth 8-567] referenced signal 'count_out' should be on the sensitivity list [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'mac_datapath' (0#1) [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mac_controlpath' [D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v:9]
+WARNING: [Synth 8-567] referenced signal 'cmp' should be on the sensitivity list [D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'mac_controlpath' (0#1) [D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mac_topmodule' (0#1) [D:/mtech/EC9032-FPGA Based Design/mac/mac_topmodule.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mac_testbench' (0#1) [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:10]
+WARNING: [Synth 8-3848] Net clk in module/entity mac_testbench does not have driver. [D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v:13]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1017.988 ; gain = 537.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1017.988 ; gain = 537.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1017.988 ; gain = 537.453
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'mac_controlpath'
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'cmp_reg' [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'done_reg' [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'Racc_reg' [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'count_out_reg' [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:74]
+WARNING: [Synth 8-327] inferring latch for variable 'count_out_reg' [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_mout_reg' [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_min_reg' [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'load_a_reg' [D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v:54]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                      S1 |                              001 |                              001
+                      S2 |                              010 |                              010
+                      S3 |                              011 |                              011
+                      S4 |                              100 |                              100
+                      S5 |                              101 |                              101
+                      S6 |                              110 |                              110
+                      S7 |                              111 |                              111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'sequential' in module 'mac_controlpath'
+WARNING: [Synth 8-327] inferring latch for variable 'load_m_reg' [D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'load_acc_reg' [D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'load_out_reg' [D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1017.988 ; gain = 537.453
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  10 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/out_reg[11]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/out_reg[10]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/out_reg[9]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/out_reg[8]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/out_reg[7]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/out_reg[6]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/out_reg[5]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/out_reg[4]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/out_reg[3]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/out_reg[2]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/out_reg[1]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/out_reg[0]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/cmp_reg) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/done_reg__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/Racc_reg[11]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/Racc_reg[10]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/Racc_reg[9]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/Racc_reg[8]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/Racc_reg[7]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/Racc_reg[6]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/Racc_reg[5]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/Racc_reg[4]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/Racc_reg[3]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/Racc_reg[2]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/Racc_reg[1]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/Racc_reg[0]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/count_out_reg[3]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/count_out_reg[2]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/count_out_reg[1]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/count_out_reg[0]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/count_out_reg[3]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/count_out_reg[2]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/count_out_reg[1]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/count_out_reg[0]__0) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_mout_reg[7]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_mout_reg[6]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_mout_reg[5]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_mout_reg[4]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_mout_reg[3]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_mout_reg[2]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_mout_reg[1]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_mout_reg[0]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_min_reg[7]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_min_reg[6]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_min_reg[5]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_min_reg[4]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_min_reg[3]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_min_reg[2]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_min_reg[1]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/datapath_inst1/temp_min_reg[0]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/controlpath_inst1/load_a_reg) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/controlpath_inst1/FSM_sequential_present_state_reg[2]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/controlpath_inst1/FSM_sequential_present_state_reg[1]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/controlpath_inst1/FSM_sequential_present_state_reg[0]) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/controlpath_inst1/load_m_reg) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/controlpath_inst1/load_acc_reg) is unused and will be removed from module mac_testbench.
+WARNING: [Synth 8-3332] Sequential element (mac_topmodule_inst1/controlpath_inst1/load_out_reg) is unused and will be removed from module mac_testbench.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1174.418 ; gain = 693.883
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1174.418 ; gain = 693.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1174.418 ; gain = 693.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1174.418 ; gain = 693.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1174.418 ; gain = 693.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1174.418 ; gain = 693.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1174.418 ; gain = 693.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1174.418 ; gain = 693.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1174.418 ; gain = 693.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1174.418 ; gain = 693.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 5 critical warnings and 106 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1174.418 ; gain = 693.883
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1174.418 ; gain = 693.883
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1174.418 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1276.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 59aa2461
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 106 Warnings, 5 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1276.426 ; gain = 803.629
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/mtech/EC9032-FPGA Based Design/mac/mac.runs/synth_1/mac_testbench.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mac_testbench_utilization_synth.rpt -pb mac_testbench_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 17 09:38:00 2025...

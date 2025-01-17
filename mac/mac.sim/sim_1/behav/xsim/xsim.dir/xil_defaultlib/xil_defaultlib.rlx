@@ -1,0 +1,9 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+D:/mtech/EC9032-FPGA Based Design/mac/mac.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v,1737074218,verilog,,D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v,,mac_controlpath,,,,,,,,
+D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v,1737074210,verilog,,D:/mtech/EC9032-FPGA Based Design/mac/mac_topmodule.v,,mac_datapath,,,,,,,,
+D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v,1737074197,verilog,,,D:/mtech/EC9032-FPGA Based Design/mac/mac_topmodule.v,mac_testbench,,,,,,,,
+D:/mtech/EC9032-FPGA Based Design/mac/mac_topmodule.v,1737074205,verilog,,D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v,D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v;D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v,mac_topmodule,,,,,,,,

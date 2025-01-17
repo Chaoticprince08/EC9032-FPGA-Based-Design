@@ -1,9 +1,10 @@
 /* 
 Developed by : Vecha Sathwik
 Date : 17/01/2025
-Version : Alpha
+Version : Beta
 Rev : 1.0
 Status : Working
+Updates : Synchronous flow of data without pipeline
 */
 `timescale 1ns / 1ps
 module mac_controlpath (
@@ -36,16 +37,22 @@ reg [2:0] next_state;
 //For reset Logic and Present State Logic
 always @(posedge rst or posedge clk) begin
     if(rst == 1'b1) begin
-        present_state <= S0;
+        present_state = S0;
     end
     else begin
-        present_state <= next_state;
+        present_state = next_state;
     end
 end
 
 //MAC Control Logic
 always @(go or present_state) begin
     if(go == 1'b1 & present_state == S0) begin
+        load_a = 1'b0;
+        load_b = 1'b0;
+        load_m = 1'b0;
+        load_acc = 1'b0;
+        load_out = 1'b0;
+        count_enable = 1'b0;
         next_state = S1;
     end
     else begin
@@ -61,28 +68,52 @@ always @(go or present_state) begin
             end
 
             S2 : begin
+                load_a = 1'b0;
+                load_b = 1'b0;
+                load_m = 1'b0;
+                load_acc = 1'b0;
+                load_out = 1'b0;
+                count_enable = 1'b0;
                 next_state = S3;
             end
 
             S3 : begin
                 load_a = 1'b0;
                 load_b = 1'b0;
-                count_enable = 1'b0;
                 load_m = 1'b1;
+                load_acc = 1'b0;
+                count_enable = 1'b0;
+                load_out = 1'b0;
                 next_state = S4;
             end
 
             S4 : begin
+                load_a = 1'b0;
+                load_b = 1'b0;
+                load_m = 1'b0;
+                load_acc = 1'b0;
+                load_out = 1'b0;
+                count_enable = 1'b0;
                 next_state = S5;
             end
 
             S5 : begin
-                load_acc = 1'b1;
+                load_a = 1'b0;
+                load_b = 1'b0;
                 load_m = 1'b0;
+                load_acc = 1'b1;
+                load_out = 1'b0;
+                count_enable = 1'b0;
                 next_state = S6;
             end
 
             S6 : begin
+                load_a = 1'b0;
+                load_b = 1'b0;
+                load_m = 1'b0;
+                load_acc = 1'b0;
+                load_out = 1'b0;
+                count_enable = 1'b0;
                 next_state = (cmp == 1'b1) ? S7 : S1;
             end
             S7 : begin

@@ -1,9 +1,10 @@
 /* 
 Developed by : Vecha Sathwik
 Date : 17/01/2025
-Version : Alpha
+Version : Beta
 Rev : 1.0
 Status : Working
+Updates : Synchronous flow of data without pipeline
 */
 `include "mac_topmodule.v"
 `timescale 1ns / 1ps
@@ -53,7 +54,7 @@ initial begin
     for(i=0; i<16; i=i+1) begin
         A = $random%16;
         B = $random%16;
-        #30;
+        #25;
     end
 
     #1000;

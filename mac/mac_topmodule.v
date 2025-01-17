@@ -1,9 +1,10 @@
 /* 
 Developed by : Vecha Sathwik
 Date : 17/01/2025
-Version : Alpha
+Version : Beta
 Rev : 1.0
 Status : Working
+Updates : Synchronous flow of data without pipeline
 */
 `include "mac_controlpath.v"
 `include "mac_datapath.v"
