@@ -4,15 +4,13 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mtech/EC9032-FPGA Based Design/m
 INFO: [VRFC 10-311] analyzing module mac_datapath
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mtech/EC9032-FPGA Based Design/mac/mac_topmodule.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mac_controlpath
-WARNING: [VRFC 10-3609] overwriting previous definition of module 'mac_controlpath' [D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v:9]
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'mac_controlpath' [D:/mtech/EC9032-FPGA Based Design/mac/mac_controlpath.v:10]
 INFO: [VRFC 10-311] analyzing module mac_datapath
-WARNING: [VRFC 10-3609] overwriting previous definition of module 'mac_datapath' [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:10]
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'mac_datapath' [D:/mtech/EC9032-FPGA Based Design/mac/mac_datapath.v:11]
 INFO: [VRFC 10-311] analyzing module mac_topmodule
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mtech/EC9032-FPGA Based Design/mac/mac_testbench.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mac_controlpath
 INFO: [VRFC 10-311] analyzing module mac_datapath
 INFO: [VRFC 10-311] analyzing module mac_topmodule
-WARNING: [VRFC 10-3609] overwriting previous definition of module 'mac_topmodule' [D:/mtech/EC9032-FPGA Based Design/mac/mac_topmodule.v:11]
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'mac_topmodule' [D:/mtech/EC9032-FPGA Based Design/mac/mac_topmodule.v:12]
 INFO: [VRFC 10-311] analyzing module mac_testbench
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mtech/EC9032-FPGA Based Design/mac/mac.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,55 @@
+# Compile of clock_divider.v was successful.
+# Compile of clock_divider_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.clock_divider_tb
+# vsim -gui work.clock_divider_tb 
+# Start time: 01:37:27 on Jan 20,2025
+# Loading work.clock_divider_tb
+# Loading work.clock_divider_100MHz_to_1Hz
+add wave sim:/clock_divider_tb/*
+run -all
+# ** Note: $finish    : D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider_tb.v(29)
+#    Time: 200000010 ns  Iteration: 0  Instance: /clock_divider_tb
+# 1
+# Break in Module clock_divider_tb at D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider_tb.v line 29
+# Compile of clock_divider.v was successful.
+# Compile of clock_divider_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of clock_divider.v was successful.
+# Compile of clock_divider_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.clock_divider_tb
+# End time: 01:43:49 on Jan 20,2025, Elapsed time: 0:06:22
+# Errors: 0, Warnings: 4
+# vsim -gui work.clock_divider_tb 
+# Start time: 01:43:49 on Jan 20,2025
+# Loading work.clock_divider_tb
+# Loading work.clock_divider_100MHz_to_1Hz
+add wave sim:/clock_divider_tb/*
+run -all
+# ** Note: $finish    : D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider_tb.v(29)
+#    Time: 200000010 ns  Iteration: 0  Instance: /clock_divider_tb
+# 1
+# Break in Module clock_divider_tb at D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider_tb.v line 29
+# Compile of clock_divider.v was successful.
+# Compile of clock_divider_tb.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of clock_divider.v was successful.
+# Compile of clock_divider_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.clock_divider_tb
+# End time: 01:46:51 on Jan 20,2025, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 3
+# vsim -gui work.clock_divider_tb 
+# Start time: 01:46:51 on Jan 20,2025
+# Loading work.clock_divider_tb
+# Loading work.clock_divider_100MHz_to_1Hz
+add wave sim:/clock_divider_tb/*
+run -all
+# ** Note: $finish    : D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider_tb.v(29)
+#    Time: 2000000010 ns  Iteration: 0  Instance: /clock_divider_tb
+# 1
+# Break in Module clock_divider_tb at D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider_tb.v line 29
+add list sim:/clock_divider_tb/#INITIAL#22/*
+# End time: 01:59:49 on Jan 20,2025, Elapsed time: 0:12:58
+# Errors: 0, Warnings: 1

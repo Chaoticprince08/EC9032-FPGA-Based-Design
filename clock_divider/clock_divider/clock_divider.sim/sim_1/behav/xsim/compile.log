@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider_100MHz_to_1Hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider_tb

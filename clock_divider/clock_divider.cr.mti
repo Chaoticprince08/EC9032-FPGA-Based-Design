@@ -1,0 +1,16 @@
+{D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider.v} {1 {vlog -work work -stats=none {D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module clock_divider_100MHz_to_1Hz
+
+Top level modules:
+	clock_divider_100MHz_to_1Hz
+
+} {} {}} {D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider_tb.v} {1 {vlog -work work -stats=none {D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module clock_divider_100MHz_to_1Hz
+-- Compiling module clock_divider_tb
+
+Top level modules:
+	clock_divider_tb
+
+} {} {}}

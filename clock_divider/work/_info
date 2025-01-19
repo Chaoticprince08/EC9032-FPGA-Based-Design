@@ -1,0 +1,58 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/mtech/verilog/niru_assignment
+vclock_divider_100MHz_to_1Hz
+Z0 !s110 1737317799
+!i10b 1
+!s100 o3[>@[X1PIQfL]7^?M;_M1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IV1S[z?BI^d=EY@h^j[GeL3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/mtech/EC9032-FPGA Based Design/clock_divider
+w1737317185
+8clock_divider.v
+Fclock_divider.v
+!i122 19
+L0 8 27
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1737317799.000000
+!s107 clock_divider.v|D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider_tb.v|
+Z6 !s90 -reportprogress|300|-work|work|-stats=none|D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider_tb.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+nclock_divider_100@m@hz_to_1@hz
+vclock_divider_tb
+R0
+!i10b 1
+!s100 Qdi:F4fenhCz?Te^[<Sf>3
+R1
+IVJ54oSoG`Cj5@YXTg5GA63
+R2
+R3
+w1737317791
+8D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider_tb.v
+FD:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider_tb.v
+!i122 19
+L0 10 27
+R4
+r1
+!s85 0
+31
+R5
+Z9 !s107 clock_divider.v|D:/mtech/EC9032-FPGA Based Design/clock_divider/clock_divider_tb.v|
+R6
+!i113 1
+R7
+R8

@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log mac_testbench.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mac_testbench.tcl
+EAStep vivado -log mac_topmodule.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mac_topmodule.tcl
