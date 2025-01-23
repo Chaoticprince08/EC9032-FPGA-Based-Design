@@ -20,29 +20,29 @@ module mac_datapath (
     input load_out,
     input count_enable,
     output reg [11:0] out,
-    output reg cmp,
-    output reg done
+    output reg cmp
+    //output reg done
 );
 
 //Internal Signals
 reg [11:0] Racc;
 reg reset_flag;
-reg [7:0] temp_min;
-reg [7:0] temp_mout;
+reg [11:0] temp_min;
+reg [11:0] temp_mout;
 reg [3:0] count_out;
 
 //For reset Logic
 always @(posedge rst or posedge clk) begin
     if(rst == 1'b1) begin
         Racc <= 12'b0;
-        done <= 1'b0;
+        //done <= 1'b0;
         out <= 12'b0;
         count_out <= 4'b0;
     end
     else begin
         if(load_out == 1'b1) begin
             out <= Racc;
-            done <= 1'b1;
+            //done <= 1'b1;
         end
         else if (load_a == 1'b1 & load_b == 1'b1) begin
             temp_min <= A*B;            

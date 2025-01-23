@@ -17,7 +17,8 @@ module mac_controlpath (
     output reg load_m,
     output reg load_acc,
     output reg load_out,
-    output reg count_enable
+    output reg count_enable,
+    output reg done
 );
 
 //States
@@ -38,6 +39,7 @@ reg [2:0] next_state;
 always @(posedge rst or posedge clk) begin
     if(rst == 1'b1) begin
         present_state = S0;
+        done = 1'b0;
     end
     else begin
         present_state = next_state;
@@ -119,6 +121,7 @@ always @(go or present_state) begin
             S7 : begin
                 load_out = 1'b1;
                 next_state = S0;
+                done = 1'b1;
             end
 
             default : next_state = S0; 

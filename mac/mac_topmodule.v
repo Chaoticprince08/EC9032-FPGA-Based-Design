@@ -41,8 +41,7 @@ mac_datapath datapath_inst1(
     .load_out(load_out),
     .count_enable(count_enable),
     .out(out),
-    .cmp(cmp),
-    .done(done)
+    .cmp(cmp)
 );
 
 mac_controlpath controlpath_inst1(
@@ -55,7 +54,8 @@ mac_controlpath controlpath_inst1(
     .load_m(load_m),
     .load_acc(load_acc),
     .load_out(load_out),
-    .count_enable(count_enable)
+    .count_enable(count_enable),
+    .done(done)
 );
     
 endmodule
